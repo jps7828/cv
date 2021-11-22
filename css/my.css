@@ -4,7 +4,7 @@
   --my-btn-color: #1da1f2;
   --my-hover-color: #75b9e7;
   --my-text-color: black;
-  --my-padding: 10px;
+  --my-padding: 9px;
   --my-margin: 10px;
 }
 
@@ -32,7 +32,9 @@
 
 
 .my-card{
-  height:200px;
+  height:180px;
+  width:245px;
+  padding:20px;
   align-items: center;
   justify-content: center;
   background: var(--my-color) !important;
@@ -40,11 +42,18 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+.my-card:hover {
+  background-color: rgba(255, 255, 255, 0);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(156, 234, 255, 1.2),
+    0 6px 20px 0 rgba(0, 0, 110, 0.19);
+}
 .my-card-2{
-  height:420px;
+  height:330px;
   padding:1px;
   margin-bottom:30px;
-  width:300px;
+  width:250px;
   background: var(--my-color) !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -52,12 +61,12 @@
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .my-card-2 > img {
-  height:350px;
+  height:270px;
 }
 .my-card-2:hover {
   background-color: rgba(255, 255, 255, 0);
   transition: transform 0.5s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 0 4px 8px 0 rgba(156, 234, 255, 1.2),
     0 6px 20px 0 rgba(0, 0, 110, 0.19);
 }
@@ -135,11 +144,11 @@ a:hover {
 
 /* Navbar CSS */
 .nav-font-size {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .nav-item {
   padding: var(--my-padding);
-  margin-right: 2px;
+  margin-right: 1px;
 }
 .nav-item,.navbar-brand {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -158,7 +167,7 @@ a:hover {
 
   /* transition: transform 0.3s ease-in-out;
   transform: scale(1.1); */
-  box-shadow: ,
+  box-shadow: 
   /* 0 4px 8px 0 rgba(156, 234, 255, 1.2), */
     0 6px 20px 0 rgba(0, 0, 110, 0.19);
 }
@@ -171,7 +180,7 @@ a:hover {
 .top-section > div {
   height: 100%;
   background: var(--my-bg-color);
-  padding-top: 200px;
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -434,6 +443,9 @@ a:hover {
 @media (min-width: 768px) {
   #contact-map, #get-in-touch{
     display: none;
+  }
+  #technology-stack > a > i  {
+    font-size:6rem !important;
   }
 }
 
