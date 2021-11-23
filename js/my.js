@@ -19,7 +19,7 @@ document.getElementById("my-light-theme").addEventListener("click", () => {
 $(document).ready(function(){
   $("#slider-carousel").owlCarousel({
     loop:true,
-    margin:50,
+    margin:30,
     responsiveClass:true,
     autoplay:true,
     autoplayTimeout:5000,
@@ -30,12 +30,12 @@ $(document).ready(function(){
             nav:false
         },
         600:{
-            items:3,
+            items:1,
             nav:false
         },
         1000:{
             items:1,
-            nav:false,
+            nav:false
         }
     }
    
@@ -48,7 +48,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#three-carousel").owlCarousel({
     loop:true,
-    margin:50,
+    margin:0,
     responsiveClass:true,
     autoplay:true,
     autoplayTimeout:3000,
@@ -56,15 +56,17 @@ $(document).ready(function(){
     responsive:{
         0:{
             items:1,
-            nav:false
+            nav:false,
+            margin:10
         },
         600:{
             items:3,
             nav:false
         },
         1000:{
-            items:3,
+            items:4,
             nav:false,
+            dots: true
         }
     }
    
