@@ -11,3 +11,92 @@ document.getElementById("my-light-theme").addEventListener("click", () => {
   document.getElementById("my-light-theme").style.display="none";
   document.getElementById("my-dark-theme").style.display="block";
 });
+
+
+
+// OWL Carousel
+
+$(document).ready(function(){
+  $("#slider-carousel").owlCarousel({
+    loop:true,
+    margin:50,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:false,
+        }
+    }
+   
+  });
+
+
+});
+
+
+$(document).ready(function(){
+  $("#three-carousel").owlCarousel({
+    loop:true,
+    margin:50,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:false,
+        }
+    }
+   
+  });
+
+
+});
+
+
+
+ $(document).ready(function(){
+  $("#owl-one").owlCarousel({
+    loop:true,
+    margin:100,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:false,
+        }
+    }
+   
+  });
+});
