@@ -1,16 +1,20 @@
 :root {
-  --my-bg-color: #217dbb;
+  --my-bg-color: repeating-linear-gradient(to bottom, rgb(33,125,187),  
+  rgb(33,125,187));
+  /* --my-bg-color: #217dbb; */
   --my-color: #217dbb;
   --my-btn-color: #1da1f2;
   --my-hover-color: #75b9e7;
   --my-text-color: black;
-  --my-padding: 9px;
+  --my-padding: 7px;
   --my-margin: 10px;
 }
 
-.my-bg-color {
-  background-color: var(--my-bg-color) !important;
-}
+/* .my-bg-color {
+  background-image: var(--my-bg-color) !important;
+  background-image: repeating-linear-gradient(to bottom, rgba(33,125,187,1),  
+   rgb(33, 137, 206));
+} */
 .my-color {
   background-color: var(--my-color) !important;
 }
@@ -110,12 +114,14 @@
 }
 
 body {
+  background-color: var(--my-bg-color) !important;
   display: block;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", "Lato", "Open Sans", "Helvetica Neue", Helvetica,
     Calibri, Arial, sans-serif;
   color: #fff !important;
+  background-image: var(--my-bg-color) !important;
 }
 
 a {
@@ -134,8 +140,8 @@ a:hover {
   font-size: 1rem;
 }
 .nav-item {
-  padding: var(--my-padding);
-  margin-right: 1px;
+  padding: 7px 10px;
+  /* margin-right: 0px; */
 }
 .nav-item,
 .navbar-brand {
@@ -164,7 +170,7 @@ a:hover {
 
 .top-section > div {
   height: 100%;
-  background: var(--my-bg-color);
+  /* background: var(--my-bg-color); */
   padding-top: 100px;
   align-items: center;
   justify-content: center;
@@ -445,6 +451,9 @@ a:hover {
   #technology h1 {
     padding-top: 30px !important;
   }
+  .technology-image {
+   width:100% !important;
+  }
   #technology-stack > a > i {
     font-size: 3rem !important;
   }
@@ -459,6 +468,10 @@ a:hover {
   }
   #coming-soon div > a > i {
     font-size: 3rem !important;
+  }
+
+  #experience{
+    padding:10px !important;
   }
 
   #contact {
