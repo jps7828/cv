@@ -10,11 +10,11 @@
   --my-margin: 10px;
 }
 
-/* .my-bg-color {
+.my-bg-color {
   background-image: var(--my-bg-color) !important;
   background-image: repeating-linear-gradient(to bottom, rgba(33,125,187,1),  
    rgb(33, 137, 206));
-} */
+}
 .my-color {
   background-color: var(--my-color) !important;
 }
