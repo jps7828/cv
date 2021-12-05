@@ -191,6 +191,18 @@ a:hover {
     rgba(0, 0, 110, 0.19);
 }
 
+#contact-alt, #get-in-touch{
+  background-image: url("../images/dev.png") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-carousel{
+  height:100vh;
+}
+
 .top-section {
   height: 65vh;
   max-width: 100%;
@@ -474,6 +486,8 @@ a:hover {
     justify-content: start;
   }
 
+  
+
   #about
   #about  div {
     padding: 0px !important;
@@ -520,9 +534,8 @@ a:hover {
   
   #education {
     display: block !important;
-    padding: 80px 5px !important;
-    padding-top: 0px !important;
-    margin: 0px !important;
+    padding: 10px 1px 15px 1px !important;
+    margin: 20px 0px 40px 0 !important;
   }
   
   #contact-alt {
@@ -530,8 +543,8 @@ a:hover {
   }
 
   #contact {
-    padding: 50px 10px 50px 10px !important;
-    margin: 0px 50px !important;
+    padding: 50px 10px !important;
+    margin: 0px 5px !important;
   }
   #contact div {
     padding: 0 !important;
@@ -543,16 +556,17 @@ a:hover {
   }
 
   #contact-map {
-    padding: 10px;
+    padding:5px 10px !important;
+    margin: 20px 0px !important;
   }
   #map {
-    padding: 0px !important;
-    margin-top: 50px;
+    padding: 15px 0px !important;
+    margin-top: 15px;
     min-height: 300px;
   }
 
   #get-in-touch{
-    padding:10px !important;
+    padding:5px 1px !important;
     margin-bottom: 50px!important;
   }
 
