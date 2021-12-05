@@ -59,11 +59,11 @@
 <body>
 
   <!-- Navbar -->
-  <section class="my-bg-color ">
+  <section class="my-bg-color sticky-top mb-5">
     <div class="container">
-      <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-        <div class="container-fluid nav-font-size">
-          <a class="navbar-brand px-3" href="#">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid nav-font-size px-0">
+          <a class="navbar-brand px-3 py-2 d-sm-block" href="#">
             <img src="images/jitendra-pratap-singh.jpg" alt="profile image" width="50"
               class="d-inline-block align-text-center rounded-circle">
             JPS
@@ -73,32 +73,32 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px;">
-              <li class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#technology" class="nav-link">Technology In Use</a>
-              </li>
-              <li class="nav-item">
-                <a href="#skills" class="nav-link">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a href="#experience" class="nav-link">Work Experience</a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a href="#education" class="nav-link">Education</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact Me</a>
-              </li>
+          <div class="collapse navbar-collapse align-items-end justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px;">
+              <a href="#home" class="nav-link nav-item">
+                <li class="p-2">Home</li>
+              </a>
+              <a href="#about" class="nav-link nav-item">
+                <li class="p-2">About</li>
+              </a>
+              <a href="#technology" class="nav-link nav-item">
+                <li class="p-2">Technology</li>
+              </a>
+              <a href="#skills" class="nav-link nav-item">
+                <li class="p-2">Skills</li>
+              </a>
+              <a href="#experience" class="nav-link nav-item">
+                <li class="p-2">Experience</li>
+              </a>
+              <a href="#projects" class="nav-link nav-item">
+                <li class="p-2">Projects</li>
+              </a>
+              <a href="#education" class="nav-link nav-item">
+                <li class="p-2">Education</li>
+              </a>
+              <a href="#contact" class="nav-link nav-item">
+                <li class="p-2">Contact</li>
+              </a>
               <li class="nav-item px-4" id="my-light-theme" style="display: none">
                 <a href="javascript:void(0)" class="nav-link animate my-center"><i
                     class="bi bi-sun text-warning my-hover"></i></a>
@@ -120,7 +120,7 @@
   
     
   <!-- Home -->
-  <section class="my-bg-color text-center top-section" id="home">
+  <section class="text-center top-section align-items-center justify-content-center row" id="home">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -130,20 +130,20 @@
           <h2 class="opacity-75">PHP Web Developer</h2>
         </div>
         <!-- Download Resume Button -->
-        <div class="align-items-center justify-content-center py-3">
+        <div class="py-3">
           <a href="jps_php.docx" class="btn btn-outline-light hover4 btn-lg" download>
             Download Resume
           </a>
         </div>
         <!-- Contact Button -->
-        <div class="mb-4 align-items-center justify-content-center py-2">
+        <div class="py-2">
           <a href="#contact" class="btn btn-outline-light hover4 btn-lg " data-bs-toggle="modal"
             data-bs-target="#contactme">
             Contact Me
           </a>
         </div>
         <!-- Down Button -->
-        <div class="align-items-center justify-content-center">
+        <div class="">
           <a id="lead-down" href="#about"> <span> <i class="bi bi-chevron-down hover"> </i> </span>
           </a>
         </div>
@@ -153,18 +153,18 @@
   <!-- Home -->
 
   <!-- About -->
-  <section class="pb-5 my-bg-color" id="about">
+  <section class="my-5 py-5" id="about">
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="text-center p-5">
           <h1>What I Do</h1>
         </div>
         <!-- Image -->
-        <div class="col-md">
+        <div class="col-md pb-5">
           <img src="images/fundamentals.svg" class="img-fluid" alt="">
         </div>
         <!-- Content -->
-        <div class="col-md p-5">
+        <div class="col-md">
           <h2 class="mb-3">Web Development & Design</h2>
 
           <p class="lead">
@@ -194,14 +194,12 @@
 
 
   <!-- About 2 -->
-  <section class="my-bg-color text-light p-5 pb-lg-0 text-center text-sm-start" id="technology">
+  <section class="text-light my-5 py-5 text-center text-sm-start" id="technology">
     <div class="container">
-      <div class="d-sm-flex align-items-center justify-content-between">
+      <div class="d-sm-flex align-items-center justify-content-between pt-5">
         <!-- Left Area -->
         <img style="width:50%;" class="img-fluid  d-sm-block technology-image" src="images/showcase.svg" alt="">
-        <div>
-
-        </div>
+        
 
         <!-- Right Area -->
         <div>
@@ -231,7 +229,7 @@
   <!-- About 2 -->
 
   <!-- Coming Soon -->
-  <section class="my-bg-color text-light p-5" id="coming-soon">
+  <section class="text-light my-5 py-5" id="coming-soon">
     <div class="container">
       <div class="row align-items-center justify-content-center text-center">
         <h2 class="col-sm-12 p-5">Coming Soon</h2>
@@ -250,55 +248,55 @@
 
 
   <!-- skills -->
-  <section class="p-5 my-bg-color" id="skills">
+  <section class="py-5 my-5" id="skills">
     <div class="container">
       <div class="row text-center g-4">
         <h2 class="text-center p-5">Skills</h2>
 
         <!-- Box 1-->
-        <div class="col-md">
+        <div class="col-md-3 col-sm-6">
           <div class="card my-card">
             <h1>PHP</h1>
           </div>
         </div>
         <!-- Box 2-->
-        <div class="col-md">
+        <div class="col-md-3 col-sm-6">
           <div class="card my-card">
             <h1>Codeigniter</h1>
           </div>
         </div>
         <!-- Box 3-->
-        <div class="col-md">
+        <div class="col-md-3 col-sm-6">
           <div class="card my-card">
             <h1>Javascript</h1>
           </div>
         </div>
         <!-- Box 4-->
-        <div class="col-md">
+        <div class="col-md-3 col-sm-6">
           <div class="card my-card">
             <h1>MySQL</h1>
           </div>
         </div>
         <!-- Box 5-->
-        <div class="col-md">
+        <div class="col-md-3 col-sm-6">
           <div class="card my-card">
             <h1>Bootstrap 5</h1>
           </div>
         </div>
         <!-- Box 6-->
-        <div class="col-md">
+        <div class="col-md-3 col-sm-6">
           <div class="card my-card">
             <h1>HTML 5</h1>
           </div>
         </div>
         <!-- Box 7-->
-        <div class="col-md">
+        <div class="col-md-3 col-sm-6">
           <div class="card my-card">
             <h1>CSS 3</h1>
           </div>
         </div>
         <!-- Box 8-->
-        <div class="col-md">
+        <div class="col-md-3 col-sm-6">
           <div class="card my-card">
             <h1>Github</h1>
           </div>
@@ -313,10 +311,11 @@
 
 
   <!-- Experience -->
-  <section class="p-5 my-bg-color" id="experience">
-    <div class="container pb-5 mb-5">
+  <section class="py-5 my-5" id="experience">
+    <div class="container">
       <div class="row text-center g-4">
         <h2 class="text-center p-5">Experience</h2>
+
         <!-- Box 1-->
         <div class="col-md">
           <div class="card shadow2 my-bg-color-3">
@@ -361,7 +360,7 @@
 
 
   <!-- Projects -->
-  <section class="p-5 my-bg-color" id="projects">
+  <section class="my-5 py-5" id="projects">
     <div class="container">
       <h2 class="text-center p-5">Projects</h2>
 
@@ -460,14 +459,11 @@
 
 
 
-
-
-
   <!-- Education -->
-  <section class="p-5 my-bg-color" id="education">
+  <section class="py-5 my-5" id="education">
     <div class="container">
       <h2 class="text-center p-5">Education</h2>
-      <div class="accordion accordion-flush" id="questions">
+      <div class="accordion accordion-flush py-5" id="questions">
         <!-- Item 4 -->
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -551,19 +547,10 @@
   <!-- Education -->
 
 
-
-
-
-
-
   <!-- Contact -->
-  <section class="my-bg-color p-5" id="contact">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-
-
-        
-              
+  <section class="my-5 pt-5" id="contact">
+    <div class="container pt-3">
+      <div class="row align-items-center justify-content-center">         
 
         <!-- Left Item -->
         <div class="col-md-10 col-sm-12">
@@ -575,13 +562,10 @@
             knowledge, skills and attitude towards the growth of organization.
           </p>
 
-          
-
-
         </div>
         <!-- Right Item -->
         <div class="col-md-2 col-sm-12 d-flex justify-content-center">
-          <img class="shadow rounded-circle img-fluid hover3 animate" src="images/jitendra-pratap-singh.jpg"
+          <img class="shadow rounded-circle img-fluid hover3 animate m-4" src="images/jitendra-pratap-singh.jpg"
             alt="portfolio profile image">
         </div>
 
@@ -593,133 +577,130 @@
 
 
 
+<!-- Contact alternate in Carousel -->
+<section class="my-bg-color" id="contact-alt">
+  <div class="container align-items-center justify-content-center">
+    <div class="row d-flex g-4 align-items-center justify-content-center">
 
-  <!-- Contact alternate in Carousel -->
-  <section class="my-bg-color" id="contact-alt">
-    <div class="container align-items-center justify-content-center">
-      <div class="row d-flex g-4 align-items-center justify-content-center">
-
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner align-items-center justify-content-center">
-            <!-- Item 1 -->
-            <div class="carousel-item active align-items-center justify-content-center">
-
-              <section class="p-5 my-bg-color">
-                <div class="container">
-                  <h2 class="text-center pt-5 pb-3">Get In Touch</h2>
-                  <div>
-                    <form action="#" class="align-items-center justify-content-center row">
-                      <div class="mb-3 col-sm-7">
-                        <input type="text" class="form-control my-color shadow4" placeholder="Name">
-                      </div>
-                      <div class="mb-3 col-sm-7">
-                        <input type="text" class="form-control my-color shadow4" placeholder="Email">
-                      </div>
-                      <div class="mb-3 col-sm-7">
-                        <input type="number" class="form-control my-color shadow4" placeholder="Phone">
-                      </div>
-                      <div class="mb-3 col-sm-7">
-                        <textarea class="form-control my-color shadow4" rows="8"
-                          placeholder="Your message here..."></textarea>
-                      </div>
-                      <div class="text-center mb-3 px-4">
-                        <button class="btn btn-block btn-outline-light my-color shadow4 btn-lg col-sm-7">Submit</button>
-                      </div>
-
-                    </form>
-                  </div>
-                </div>
-              </section>
-
-
-
-            </div>
-            <!-- Item 2 -->
-            <div class="carousel-item">
-              <section class="p-5 my-bg-color">
-                <div class="container">
-                  <h2 class="text-center pt-5 pb-3">Get In Touch</h2>
-                  <div>
-                    <!-- Contact -->
-                    <div class="col-md align-items-center justify-content-center row">
-                      <ul class="list-group list-group-flush lead my-color shadow4 p-5 m-5 my-border"
-                        style="width:80%;">
-                        <li class="list-group-item my-color">
-                          <a><i class="bi bi-building h4 text-warning my-hover"></i></a>
-                          <span class="fw-bold text-warning">Office: </span>
-                          <span class="text-warning">Rajokari, South Delhi, Delhi, Bharat</span>
-                        </li>
-                        <li class="list-group-item my-color">
-                          <a><i class="bi bi-house h4 text-warning my-hover"></i></a>
-                          <span class="fw-bold text-warning">Home: </span>
-                          <span class="text-warning">Harakhpur, Mandhata, Pratapgarh,
-                            Uttar Pradesh, Bharat</span>
-                        </li>
-                        <li class="list-group-item my-color">
-                          <a href="callto:7828550802"><i class="bi bi-phone h4 text-warning my-hover"></i></a>
-                          <span class="fw-bold text-warning">Phone: </span> <span class="text-warning">7828550802</span>
-                        </li>
-                        <li class="list-group-item my-color">
-                          <a href="mailto:jps7828@gmail.com"><i class="bi bi-envelope h4 text-warning my-hover"></i></a>
-                          <span class="fw-bold text-warning">E-mail: </span>
-                          <span class="text-warning"> jps7828@gmail.com</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <!-- Item 3 -->
-            <div class="carousel-item">
-
-
-              <section class="p-5 my-bg-color">
-                <div class="container">
-                  <h2 class="text-center pt-5 pb-3">Get In Touch</h2>
-                  <div>
-                    <!-- Map -->
-                    <div class="col-md align-items-center justify-content-center row">
-                      <iframe style="height:400px; width:60%;" class="my-border shadow4"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116645.78000210313!2d81.8422457012192!3d25.887141172639197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a9404abd08501%3A0x76e087800b483e35!2sPratapgarh%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1637257959473!5m2!1sen!2sin"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner align-items-center justify-content-center">
+          <!-- Item 1 -->
+          <div class="carousel-item active align-items-center justify-content-center">
+
+            <section class="p-5 my-bg-color">
+              <div class="container">
+                <h2 class="text-center p-5">Get In Touch</h2>
+                <div>
+                  <form action="#" class="align-items-center justify-content-center row">
+                    <div class="mb-3 col-sm-7">
+                      <input type="text" class="form-control my-color shadow4" placeholder="Name">
+                    </div>
+                    <div class="mb-3 col-sm-7">
+                      <input type="text" class="form-control my-color shadow4" placeholder="Email">
+                    </div>
+                    <div class="mb-3 col-sm-7">
+                      <input type="number" class="form-control my-color shadow4" placeholder="Phone">
+                    </div>
+                    <div class="mb-3 col-sm-7">
+                      <textarea class="form-control my-color shadow4" rows="8"
+                        placeholder="Your message here..."></textarea>
+                    </div>
+                    <div class="text-center mb-3 px-4">
+                      <button class="btn btn-block btn-outline-light my-color shadow4 btn-lg col-sm-7">Submit</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </section>
 
 
 
+          </div>
+          <!-- Item 2 -->
+          <div class="carousel-item">
+            <section class="p-5 my-bg-color">
+              <div class="container">
+                <h2 class="text-center p-3">Get In Touch</h2>
+                <div class="pb-5">
+                  <!-- Contact -->
+                  <div class="col-md align-items-center justify-content-center row">
+                    <ul class="list-group list-group-flush lead my-color shadow4 p-5 m-5 my-border"
+                      style="width:80%;">
+                      <li class="list-group-item my-color">
+                        <a><i class="bi bi-building h4 text-warning my-hover"></i></a>
+                        <span class="fw-bold text-warning">Office: </span>
+                        <span class="text-warning">Rajokari, South Delhi, Delhi, Bharat</span>
+                      </li>
+                      <li class="list-group-item my-color">
+                        <a><i class="bi bi-house h4 text-warning my-hover"></i></a>
+                        <span class="fw-bold text-warning">Home: </span>
+                        <span class="text-warning">Harakhpur, Mandhata, Pratapgarh,
+                          Uttar Pradesh, Bharat</span>
+                      </li>
+                      <li class="list-group-item my-color">
+                        <a href="callto:7828550802"><i class="bi bi-phone h4 text-warning my-hover"></i></a>
+                        <span class="fw-bold text-warning">Phone: </span> <span class="text-warning">7828550802</span>
+                      </li>
+                      <li class="list-group-item my-color">
+                        <a href="mailto:jps7828@gmail.com"><i class="bi bi-envelope h4 text-warning my-hover"></i></a>
+                        <span class="fw-bold text-warning">E-mail: </span>
+                        <span class="text-warning"> jps7828@gmail.com</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- Item 3 -->
+          <div class="carousel-item">
 
+
+            <section>
+              <div class="container">
+                <h2 class="text-center p-5">Get In Touch</h2>
+                <div class="pb-5">
+                  <!-- Map -->
+                  <div class="col-md align-items-center justify-content-center row">
+                    <iframe style="height:400px; width:60%;" class="my-border shadow4"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116645.78000210313!2d81.8422457012192!3d25.887141172639197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a9404abd08501%3A0x76e087800b483e35!2sPratapgarh%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1637257959473!5m2!1sen!2sin"
+                      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
+
+
+
     </div>
-  </section>
-  <!-- Contact alternate in Carousel -->
-
-
+  </div>
+</section>
+<!-- Contact alternate in Carousel -->
 
 
 
@@ -821,8 +802,8 @@
 
 
           <!-- Up arrow -->
-          <a href="#" class="position-fixed bottom-0 end-0 p-4" title="Go To Top"><i
-              class="bi bi-arrow-up-circle h1 text-light my-hover"></i>
+          <a href="#" class="position-fixed bottom-0 end-0 p-4" title="Go To Top">
+            <i class="bi bi-arrow-up-circle h3 arrow-hover"></i>
           </a>
 
         </div>
