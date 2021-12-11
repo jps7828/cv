@@ -160,7 +160,7 @@ a:hover {
 .nav-link {
   text-decoration: none !important;
 }
-.nav-font-size {
+.navbar-nav li {
   font-size: 1.2em;
 }
 .nav-item  {
