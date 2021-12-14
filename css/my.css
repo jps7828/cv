@@ -458,6 +458,32 @@ a:hover {
 }
 
 /* MEDIA QUERY */
+@media(prefers-color-scheme: dark) 
+{
+  :root {
+    --my-bg-color: rgb(0, 0, 3);
+    /* --my-bg-color: #217dbb; */
+    --my-color: #217dbb;
+    --my-btn-color: #6b4880;
+    --my-hover-color: #75b9e7;
+    --my-text-color: black;
+    --my-padding: 7px;
+    --my-margin: 10px;
+  }
+}
+@media(prefers-color-scheme: light) {
+  :root {
+    --my-bg-color: repeating-linear-gradient(to bottom, rgb(33,125,187),  
+    rgb(33,125,187));
+    /* --my-bg-color: #217dbb; */
+    --my-color: #217dbb;
+    --my-btn-color: #1da1f2;
+    --my-hover-color: #75b9e7;
+    --my-text-color: black;
+    --my-padding: 7px;
+    --my-margin: 10px;
+  }
+}
 @media (min-width: 768px) {
   
   #technology-stack > a > i {
