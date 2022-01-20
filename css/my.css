@@ -4,12 +4,25 @@
   /* --my-bg-color: #217dbb; */
   --my-color: #217dbb;
   --my-btn-color: #1da1f2;
+  --my-dark-btn-color: #6e5494;
   --my-hover-color: #75b9e7;
   --my-text-color: black;
   --my-padding: 7px;
   --my-margin: 10px;
+  --my-dark-bg: rgba(0, 0, 3);
+  --my-light-bg: #217dbb;
 }
 
+/* Theme Dark/Light */
+[data-theme="dark"] {
+background-color: var(--my-dark-bg) !important;
+  
+}
+
+[data-theme="light"] {
+background-color: var(--my-light-bg) !important;
+}
+/* Theme Dark/Light */
 
 
 .my-bg-color {
@@ -464,7 +477,6 @@ a:hover {
 {
   :root {
     --my-bg-color: rgb(0, 0, 3);
-    /* --my-bg-color: #217dbb; */
     --my-color: #217dbb;
     --my-btn-color: #6b4880;
     --my-hover-color: #75b9e7;
@@ -486,6 +498,7 @@ a:hover {
     --my-margin: 10px;
   }
 }
+
 @media (min-width: 768px) {
   
   #technology-stack > a > i {

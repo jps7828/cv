@@ -1,18 +1,48 @@
-document.getElementById("my-dark-theme").addEventListener("click", () => {
-  document.documentElement.style.setProperty("--my-bg-color", "#222");
-  document.documentElement.style.setProperty("--my-btn-color", "#217dbb");
-  document.getElementById("my-light-theme").style.display="block";
-  document.getElementById("my-dark-theme").style.display="none";
+// document.getElementById("my-dark-theme").addEventListener("click", () => {
+//   document.documentElement.style.setProperty("--my-bg-color", "#222");
+//   document.documentElement.style.setProperty("--my-btn-color", "#217dbb");
+//   document.getElementById("my-light-theme").style.display="block";
+//   document.getElementById("my-dark-theme").style.display="none";
+// });
+
+// document.getElementById("my-light-theme").addEventListener("click", () => {
+//   document.documentElement.style.setProperty("--my-bg-color", "#217dbb");
+//   document.documentElement.style.setProperty("--my-btn-color", "#6e5494");
+//   document.getElementById("my-light-theme").style.display="none";
+//   document.getElementById("my-dark-theme").style.display="block";
+// });
+
+$(document).ready(function() {
+	// Dark - Light mode code
+	initTheme();
+
+	function initTheme() {
+		var darkThemeSelected =
+			localStorage.getItem("darkSwitch") !== null &&
+			localStorage.getItem("darkSwitch") === "dark";
+		darkThemeSelected
+			? document.body.setAttribute("data-theme", "dark")
+			: document.body.setAttribute("data-theme", "light");
+		darkThemeSelected
+			? (document.getElementById("my-dark-theme").style.display = "none")
+			: (document.getElementById("my-light-theme").style.display = "none");
+	}
+
+	document.getElementById("my-dark-theme").addEventListener("click", () => {
+		document.body.setAttribute("data-theme", "dark");
+		localStorage.setItem("darkSwitch", "dark");
+		document.getElementById("my-light-theme").style.display = "block";
+		document.getElementById("my-dark-theme").style.display = "none";
+	});
+
+	document.getElementById("my-light-theme").addEventListener("click", () => {
+		document.body.setAttribute("data-theme", "light");
+		localStorage.removeItem("darkSwitch");
+		document.getElementById("my-light-theme").style.display = "none";
+		document.getElementById("my-dark-theme").style.display = "block";
+	});
 });
-
-document.getElementById("my-light-theme").addEventListener("click", () => {
-  document.documentElement.style.setProperty("--my-bg-color", "#217dbb");
-  document.documentElement.style.setProperty("--my-btn-color", "#6e5494");
-  document.getElementById("my-light-theme").style.display="none";
-  document.getElementById("my-dark-theme").style.display="block";
-});
-
-
+// Dark - Light mode code
 
 // OWL Carousel
 
