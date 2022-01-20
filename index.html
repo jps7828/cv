@@ -108,11 +108,11 @@
                 <a href="javascript:void(0)" class="nav-link animate my-center"><i
                     class=" bi bi-moon text-light my-hover"></i></a>
               </li>
-              <a class="p-3 arrow-hover fixed-top my-auto" style="margin-left:1390px;" href="https://api.whatsapp.com/send?phone=917828550802&text=Hello%20Jitendra%2C%20I%20would%20like%20to%20have%20a%20website." class="nav-link nav-item" target="_blank">
+              <!-- <a class="p-3 arrow-hover fixed-top my-auto" style="margin-left:1390px;" href="https://api.whatsapp.com/send?phone=917828550802&text=Hello%20Jitendra%2C%20I%20would%20like%20to%20have%20a%20website." class="nav-link nav-item" target="_blank">
                 <li class="p-0"><img style="width:50px;" src="images/whatsapp.png"></li>
-              </a>
+              </a> -->
 
-
+              
             </ul>
           </div>
         </div>
@@ -120,6 +120,12 @@
     </div>
   </section>
   <!-- Navbar End-->
+
+  <!-- whatsapp -->
+  <a class="position-fixed top-0 end-0 p-4" id="whatsApp" style="display: none;"  href="https://api.whatsapp.com/send?phone=917828550802&text=Hello%20Jitendra%2C%20I%20would%20like%20to%20have%20a%20website." class="nav-link nav-item" target="_blank">
+    <li class="arrow-hover"><img style="width:30px;" src="images/whatsapp.png"></li>
+  </a>
+  <!-- whatsapp -->
 
     
   <!-- Home -->
@@ -605,23 +611,26 @@
               <div class="container">
                 <h2 class="text-center p-5"><span class="text-warning"> Get</span> In Touch</h2>
                 <div>
-                  <form action="#" class="align-items-center justify-content-center row">
+                  <form action="mailto:jps7828@gmail.com" method="post" class="align-items-center justify-content-center row">
                     <div class="mb-3 col-sm-7">
-                      <input type="text" class="form-control my-color shadow4" placeholder="Name">
+                      <input type="text" class="form-control my-color shadow4" placeholder="Name" required>
                     </div>
                     <div class="mb-3 col-sm-7">
-                      <input type="text" class="form-control my-color shadow4" placeholder="Email">
+                      <input type="text" class="form-control my-color shadow4" placeholder="Email" required>
                     </div>
                     <div class="mb-3 col-sm-7">
-                      <input type="number" class="form-control my-color shadow4" placeholder="Phone">
+                      <input type="number" class="form-control my-color shadow4" placeholder="Phone" required>
                     </div>
                     <div class="mb-3 col-sm-7">
                       <textarea class="form-control my-color shadow4" rows="8"
-                        placeholder="Your message here..."></textarea>
+                        placeholder="Your message here..." required></textarea>
                     </div>
                     <div class="text-center mb-3 px-4">
-                      <button class="btn btn-block btn-outline-light my-color shadow4 btn-lg col-sm-7">Submit</button>
+                      <button class="btn btn-block btn-outline-light my-color shadow4 btn-lg col-sm-7" type="submit">Submit</button>
                     </div>
+                    <a href="mailto:jps7828@gmail.com" target="_blank" class="text-center mb-3 px-4">
+                      <button class="btn btn-block btn-outline-light my-color shadow4 btn-lg col-sm-7">Submit</button>
+                    </a>
 
                   </form>
                 </div>
@@ -806,10 +815,12 @@
 
 
           <!-- Up arrow -->
-          <a href="#" class="position-fixed bottom-0 end-0 p-4" title="Go To Top">
+          <a href="#" class="position-fixed bottom-0 end-0 p-4" id="goToTop" style="display: none;" title="Go To Top">
             <i class="bi bi-arrow-up-circle h3 arrow-hover"></i>
           </a>
           <!-- Up arrow -->
+
+          
 
         </div>
 

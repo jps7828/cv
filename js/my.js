@@ -1,16 +1,21 @@
-// document.getElementById("my-dark-theme").addEventListener("click", () => {
-//   document.documentElement.style.setProperty("--my-bg-color", "#222");
-//   document.documentElement.style.setProperty("--my-btn-color", "#217dbb");
-//   document.getElementById("my-light-theme").style.display="block";
-//   document.getElementById("my-dark-theme").style.display="none";
-// });
+// Display on scroll
+whatsApp = document.querySelector("#whatsApp");
+goToTop = document.querySelector("#goToTop");
 
-// document.getElementById("my-light-theme").addEventListener("click", () => {
-//   document.documentElement.style.setProperty("--my-bg-color", "#217dbb");
-//   document.documentElement.style.setProperty("--my-btn-color", "#6e5494");
-//   document.getElementById("my-light-theme").style.display="none";
-//   document.getElementById("my-dark-theme").style.display="block";
-// });
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 300) {
+        whatsApp.style.display = "block";
+        goToTop.style.display = "block";
+    } else {
+        whatsApp.style.display = "none";
+        goToTop.style.display = "none";
+    }
+};
+window.addEventListener("scroll", myScrollFunc);
+// Display on scroll
+
+
 
 $(document).ready(function() {
 	// Dark - Light mode code

@@ -17,7 +17,6 @@
 /* Theme Dark/Light */
 [data-theme="dark"] {
 background-color: var(--my-dark-bg) !important;
-  
 }
 
 [data-theme="light"] {
@@ -25,10 +24,10 @@ background-color: var(--my-light-bg) !important;
 }
 /* Theme Dark/Light */
 
-.my-bg-color {
+/* .my-bg-color {
   background-color: var(--my-bg-color) !important;
   background-image: var(--my-bg-color) !important;
-}
+} */
 .my-color {
   background-color: var(--my-color) !important;
 }
@@ -484,6 +483,10 @@ a:hover {
     --my-padding: 7px;
     --my-margin: 10px;
   }
+  .my-bg-color {
+    background-color: var(--my-color) !important;
+    background-image: var(--my-color) !important;
+  }
 }
 @media(prefers-color-scheme: light) {
   :root {
@@ -496,6 +499,10 @@ a:hover {
     --my-text-color: black;
     --my-padding: 7px;
     --my-margin: 10px;
+  }
+  .my-bg-color {
+    background-color: var(--my-bg-color) !important;
+    background-image: var(--my-bg-color) !important;
   }
 }
 
