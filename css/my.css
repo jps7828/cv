@@ -13,6 +13,7 @@
   --my-light-bg: #217dbb;
 }
 
+
 /* Theme Dark/Light */
 [data-theme="dark"] {
 background-color: var(--my-dark-bg) !important;
@@ -23,7 +24,6 @@ background-color: var(--my-dark-bg) !important;
 background-color: var(--my-light-bg) !important;
 }
 /* Theme Dark/Light */
-
 
 .my-bg-color {
   background-color: var(--my-bg-color) !important;
